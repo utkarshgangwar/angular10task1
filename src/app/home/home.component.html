@@ -1,0 +1,37 @@
+<!-- <p>home works!</p> -->
+<p class="anubhaDisclaimer">{{disclaimer}}</p>
+
+<h2 class="anubha">{{title}}</h2>
+
+<div class="formDiv">
+    <form #signupForm="ngForm" (submit)="addFormInfo(signupForm)">
+        <div class="form-group">
+            <label for="exampleInputName1">Name</label>
+            <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" [(ngModel)]="email" name="email" class="form-control" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group" style="margin-bottom: 5px;">
+            <label for="exampleInputMobile1">Mobile</label>
+            <input type="text"  [(ngModel)]="mobile" name="mobile" class="form-control" placeholder="Mobile">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<!-- Debug Start -->
+<!-- <h2>Interpolation Check</h2>
+<div> {{ name }} </div>
+<div> {{ email }} </div>
+<div> {{ password }} </div>
+<div> {{ mobile }} </div> -->
+<!-- Debug End -->

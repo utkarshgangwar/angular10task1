@@ -1,0 +1,26 @@
+.anubha{
+    margin-left: 30rem;
+    margin-right: 30rem;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+.anubhaDisclaimer{
+    margin-left: 30rem;
+    margin-right: 30rem;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+.formDiv{
+    margin-top: 4rem;
+    text-align: center;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+
+.buttonSubmit{
+    background-color: darkgreen;
+}
