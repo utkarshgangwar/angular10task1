@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from '@angular/forms'
+import { NgForm } from '@angular/forms'
 
 @Component({
   selector: 'app-home',
@@ -8,12 +8,12 @@ import {NgForm} from '@angular/forms'
 })
 export class HomeComponent implements OnInit {
 
-  firstname: string = '';
+  // firstname: string = '';
   name: string = '';
   email: string = '';
   password: string = '';
   mobile: string = '';
-
+  gender: any;
   constructor() { }
 
   ngOnInit(): void {
@@ -22,9 +22,32 @@ export class HomeComponent implements OnInit {
   title = 'Sign Up';
   disclaimer = 'Rougly Created Form';
 
-  addFormInfo(formValue: NgForm){
+  addFormInfo(formValue: NgForm) {
     console.log(formValue.value);
   }
 
+  male = false;
+  female = false;
+  other = false;
+
+  setState(val) {
+   this.gender = val;
+  }
+
+  // setStateFemale() {
+  //   if (!this.female) {
+  //     this.female = !this.female;
+  //     this.male = false;
+  //     this.other = false;
+  //   }
+  // }
+
+  // setStateOther() {
+  //   if (!this.other) {
+  //     this.other = !this.other;
+  //     this.female = false;
+  //     this.male = false;
+  //   }
+  // }
 
 }

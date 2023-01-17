@@ -10,6 +10,14 @@
             <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Name">
         </div>
         <div class="form-group">
+            <label for="exampleInput">Gender</label>
+            <div>
+                <button type="button" class="btn" (click)="setState('M')" [ngClass]="(gender=='M')? 'active':'inActive'" >Male</button>
+                <button type="button" class="btn" (click)="setState('F')" [ngClass]="(gender=='F')? 'active':'inActive'" >Female</button>
+                <button type="button" class="btn" (click)="setState('O')" [ngClass]="(gender=='O')? 'active':'inActive'" >Other</button>
+            </div>
+        </div>
+        <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" [(ngModel)]="email" name="email" class="form-control" aria-describedby="emailHelp"
                 placeholder="Enter email">
@@ -21,17 +29,8 @@
         </div>
         <div class="form-group" style="margin-bottom: 5px;">
             <label for="exampleInputMobile1">Mobile</label>
-            <input type="text"  [(ngModel)]="mobile" name="mobile" class="form-control" placeholder="Mobile">
+            <input type="text" [(ngModel)]="mobile" name="mobile" class="form-control" placeholder="Mobile">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-
-
-<!-- Debug Start -->
-<!-- <h2>Interpolation Check</h2>
-<div> {{ name }} </div>
-<div> {{ email }} </div>
-<div> {{ password }} </div>
-<div> {{ mobile }} </div> -->
-<!-- Debug End -->

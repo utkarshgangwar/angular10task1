@@ -24,3 +24,13 @@
 .buttonSubmit{
     background-color: darkgreen;
 }
+
+.active{
+    background-color: green;
+    color: white;
+}
+
+.inActive{
+    background-color: grey;
+    color: white;
+}
